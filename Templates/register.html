@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaC Books - Registro</title>
+    <link rel="shortcut icon" href="../Static/img/icon-book.png">
+    <link rel="stylesheet" href="../Static/CSS/Register.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d36bbab6c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <main>
+        <section id="container-register">
+            <header>
+                <!-- Barra de navegacion -->
+                <nav class="nav-top">
+                <div id="logo">
+                    <a href="../index.html" class="btnmenu">
+                        <i class="fa-solid fa-book-open fa-beat" style="color: #ffffff;"></i>
+                        <span id="logo-text">
+                            CaC - Books
+                        </span>
+                    </a>
+                </div>
+                    <!-- Opciones en barra de navegacion -->
+                    <ul class="nav-links-top">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html">Tendencias</a></li>
+                        <li><a href="#Sobre">Nosotros</a></li>
+                        <li><a href="#Servicios">Servicios</a></li>
+                        <li><a href="#Testimonios">Testimonios</a></li>
+                        <li><a href="#Contacto">Contacto</a></li>
+                    </ul>
+                 </nav>
+            </header> 
+        </section>
+        <section id="signup">
+            <div class="signupFrm">
+                <form action="" class="form">
+                    <h1 class="title">Registro</h1>
+            
+                    <div class="inputContainer">
+                        <input type="email" id="registermail" class="input" placeholder="">
+                        <label for="" class="label">Email</label>
+                        <label for="" class="error" id="error-registermail"></label>
+                    </div>
+            
+                    <div class="inputContainer">
+                        <input type="text" id="registerusser" class="input" placeholder="">
+                        <label for="" class="label">Usuario</label>
+                        <label for="" class="error" id="error-registerusser"></label>
+                    </div>
+                    
+                    <div class="inputContainer">
+                        <input type="date" id="registerdate" class="input" placeholder="">
+                        <label for="" class="label">Fecha de Nacimiento</label>
+                        <label for="" class="error" id="error-registerdate"></label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="password" id="registerpass" class="input" placeholder="">
+                        <label for="" class="label">Contraseña</label>
+                        <label for="" class="error" id="error-registerpass"></label>
+                    </div>
+            
+                    <div class="inputContainer">
+                        <input type="password" id="registerrepas" class="input" placeholder="">
+                        <label for="" class="label">Confirmar Contraseña</label>
+                        <label for="" class="error" id="error-registerrepas"></label>
+                    </div>
+
+                    <div class="signuplast">
+                        <div>
+                            <p>Acepto los terminos y condiciones</p>
+                            <div class="cbclass">
+                                <input type="checkbox" id="registerTyC" class="signupch">
+                                <p class="errorcb" id="error-registerTyC"></p>
+                            </div>
+                        </div>
+
+                        <div class="Btnsubmit">
+                            <input type="button" id="registerbtn" class="submitBtn" value="Registrarse">
+                        </div>
+                    </div>  
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Contenido Footer -->
+        <section>
+            <div>
+                <p>Codo a Codo Books</p>
+                <p>Copyright R 2024 - All rights reserver</p>
+                <p>Powered by Federico Liquin</p>
+                <nav>
+                    <ul class ="nav-links-bot">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#Sobre">Sobre Nosotros</a></li>
+                        <li><a href="#Servicios">Servicios</a></li>
+                        <li><a href="#Testimonios">Testimonios</a></li>
+                        <li><a href="#Contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </footer>
+    <script src="../Static/js/validation-register.js"></script>
+</body>
+</html>

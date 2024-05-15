@@ -1,0 +1,306 @@
+:root{
+    --bg-color: #1C272B;
+    --bg-color2:#1c272be7;
+    --primary-color:#B19D8B;
+    --secondary-color:#4b4744;
+    --third-color: #FDFFFF ;
+    --third-bis-color:#000000;
+    --bg-input-color:#000000;
+    --fourth-color: #d3d3d3
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: "Sedan", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: 18px;  
+}
+
+li :hover{
+    color: rgb(82, 172, 172);
+    font-size: 20px;
+}
+
+nav{
+    margin: 10px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+/* SELECTOR POR ETIQUETAS */
+
+h1{
+    color: var(--third-color);
+    margin: 0px;
+}
+
+h2{
+    color: var(--third-color);
+}
+
+h3{
+    color: var(--third-color);
+    font-size: 20px;
+
+    /* text-align: center; */
+}
+
+
+/* SELECTOR POR ID */
+
+#logo{
+    /* color: var(--primary-color); */
+    font-weight: bold;
+    /* align-items: start; */
+}
+
+#logo a i{
+    margin-right: 5px;
+}
+
+
+#search-title{
+    color: var(--third-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+#tendencias{
+    width: 100%;
+}
+
+#detail-book{
+    align-content: end;
+}
+
+
+/* #field-register{
+    width: 500px;
+    height: 800px;
+    
+} */
+
+#banner-container{
+    /* margin: 0px -5px;  */
+    background: url(../img/frente.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    box-shadow: inset 500px 50px 40px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100%;
+    /* transform: translate(-10px,-5px); */
+    overflow: hidden;
+}
+
+#banner-about1{
+    background-image: url(../img/libros-apilados.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 80vh;
+    margin: 0px 0px 0px 50px;
+    border-radius: 20px;
+}
+
+#banner-about2{
+    background-image: url(../img/about2.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;   
+    margin: 20px 0px 0px 0px;
+}
+
+
+/* SELECTOR POR CLASE */
+
+.banner{
+    max-width: 500px;
+    margin: 40vh 0px 0px 10px;
+    flex-direction: column;
+    height: 50vh;
+    /* Animacion de texto de Banner desde https://animate.style/ */
+    animation: backInLeft; 
+    animation-duration: 2s; 
+}
+
+.nav-top{
+    background-color: var(--bg-color);
+    border-color: #FDFFFF;
+    position: fixed;
+    padding: 5px 0px 5px 5px;
+    width: 100%;
+    top: 0;
+    margin: 0px 0px;
+    z-index: 1000 ;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-links-top{
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    transform: translate(-20px,0px);    
+    /* Animacion de lista de navegador top desde https://animate.style */
+    /* animation: backInRight; 
+    animation-duration: 2s; */
+}
+
+.nav-links-bot{
+    list-style-type: none;
+
+}
+
+.Titulo{
+    color: var(--third-color);
+    text-align: center;
+    padding: 1px;
+    font-size: 50px;
+    margin: 20px 0px 0px 0px;
+}
+
+.btn-cac{
+    background-color: var(--third-color);
+    padding: 10px;
+    color: var(--third-bis-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;    
+}
+
+.btn-cac:hover{
+    background-color: var(--third-bis-color);
+    color: var(--third-color);
+    border: 1px solid var(--primary-color)
+}
+
+.input-search{
+    margin : 0px 0px;
+    width: 400px;
+    height: 20px;
+}
+
+.libros-tendencias{
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(2, 400px);
+    justify-content: center;
+    /* align-items:top; */
+    row-gap: 30px;
+    column-gap: 10px;
+    /* width: 100%; */
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    background-color: var(--fourth-color);
+    border-radius: 10px;
+}
+
+.tapa-libro{
+    width: 200px;
+    height: 300px;
+}
+
+.detail-book{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.text-banner-about2{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+/* PSEUDOCLASES */
+
+.detail-book h4{
+    margin: 0;
+    border: 2px;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
+
+#text-banner-about1 h3{
+    background-color: #000000;
+    position: absolute;
+    max-width: 500px;
+    max-height: 300px;
+    left: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    transform: translate(0px,-400px);
+    /* overflow:hidden ; */
+}
+
+#text-banner-about2 div{
+    background-color: var(--bg-color2);
+    position: absolute;
+    max-width: 300px;
+    max-height: 300px;
+    left: 5%;
+    padding: 40px;
+    border-radius: 10px;
+    transform: translate(0px,-400px);
+    overflow:hidden ; 
+}
+
+#text-banner-about2 h2{
+    font-size: 30px;
+    margin: 0px; 
+}
+
+
+
+/* TABLETS */
+@media screen and (min-width: 680px) and (max-width: 1073px){
+    .libros-tendencias{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, 300px);
+        /* width: 300px; */
+        /* height: 200px; */
+        justify-content: center;
+        align-items:center;
+        row-gap: 10px;
+        column-gap: 10px;  
+    }   
+} 
+
+/* CELULARES */
+@media screen and (max-width: 680px){
+    .libros-tendencias{
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        grid-template-rows: repeat(4, 300px);
+        justify-content: center;
+        align-items:center;
+        row-gap: 10px;
+        column-gap: 10px;  
+    }
+} 

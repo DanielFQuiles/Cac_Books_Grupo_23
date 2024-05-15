@@ -1,0 +1,226 @@
+/* CONF BASE */
+
+:root{
+    --bg-color: #1C272B;
+    --bg-color2:#1c272be7;
+    --primary-color:#B19D8B;
+    --secondary-color:#4b4744;
+    --third-color: #FDFFFF ;
+    --third-bis-color:#000000;
+    --bg-input-color:#000000;
+    --fourth-color: #d3d3d3;
+    --error-color: #f70505dc;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: "Sedan", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    margin: 0px;
+}
+
+/* NAVEGADOR */
+a{
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: 18px;  
+}
+
+nav ul li a:hover{
+    color: rgb(82, 172, 172);
+    font-size: 20px;
+
+}
+
+nav{
+    margin: 10px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.nav-links-top{
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    transform: translate(-20px,0px);    
+    /* Animacion de lista de navegador top desde https://animate.style */
+    /* animation: backInRight; 
+    animation-duration: 2s; */
+}
+
+.nav-top{
+    background-color: var(--bg-color);
+    border-color: #FDFFFF;
+    position: fixed;
+    padding: 5px 0px 5px 5px;
+    width: 100%;
+    top: 0;
+    margin: 0px 0px;
+    z-index: 1000 ;
+    height: 50px;
+    align-items: center;
+}
+
+/* FORMULARIO DE REGISTRO */
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: var(--fourth-color);
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+  
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--bg-color);
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+/* Campo debajo de los input */
+.signuplast{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Etiquetas */
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 2px;
+    background-color: var(--fourth-color);
+    color: var(--bg-color2);
+    font-size: 16px;
+    transition: 1s;
+    z-index: 0;
+}
+
+/*Div de Boton */
+.Btnsubmit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Boton */
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 20px;
+    border: none;
+    background-color: var(--bg-color);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Cambia de color el boton cuando el cursor pasa por arriba */
+.submitBtn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Corre el label cuando se selecciona el input */
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color);
+}
+
+/* Cambia el borde de color cuando se selecciona el input */
+.input:focus {
+    border: 2px solid var(--bg-color);
+}
+
+/* Mantiene fijo el label cuando el input se encuentra con caracteres */
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.signupch{
+    height: 20px;
+    width: 20px;
+}
+
+/* Etiqueta de error */
+.error{
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    padding: 0 2px;
+    background-color: var(--fourth-color);
+    font-size: 16px;
+    z-index: 1;
+    color: var(--error-color);
+    font-weight: bolder;
+}
+
+/* Borde en error de inputs */
+.input-error {
+    border: 2px solid red; 
+}
+
+/* Error de checkbox */
+.errorcb{
+    font-size: 15px;
+    z-index: 1;
+    color: var(--error-color);
+    font-weight: bolder;
+    margin: 0px;
+}
+
+/* Posicion de checkbox y etiqueta de error de checbox */
+.cbclass{
+    display: flex;
+    align-items: center;
+}
+
+/* FIN FORMULARIO DE REGISTRO */
+
+@media screen and (max-width: 820px){
+    /* #logo{
+        top: 200px;
+        position: absolute;
+    } */
+}
