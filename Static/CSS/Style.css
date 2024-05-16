@@ -126,8 +126,7 @@ h3{
 
 .banner{
     max-width: 500px;
-    margin: 40vh 0px 0px 10px;
-    flex-direction: column;
+    margin: 40vh 0px 0px 30px;
     height: 50vh;
     /* Animacion de texto de Banner desde https://animate.style/ */
     animation: backInLeft; 
